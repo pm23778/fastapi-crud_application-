@@ -1,0 +1,10 @@
+# Project dependencies
+
+fastapi
+uvicorn
+SQLAlchemy
+python-jose
+passlib[bcrypt]
+pydantic
+python-dotenv
+asyncpg
