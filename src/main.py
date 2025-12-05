@@ -1,11 +1,16 @@
 from fastapi import FastAPI
 from src.database.init_db import ensure_database, init_models
-from src.api.v1 import users
+
+from src.api.routers  import api_router
 from src.database.session import Base, engine, test_db_connection
 import asyncio
 
 app = FastAPI(title="Secure Users CRUD App")
-app.include_router(users.router)
+
+
+
+app.include_router(api_router)
+
 
 @app.on_event("startup")
 async def startup_event():
