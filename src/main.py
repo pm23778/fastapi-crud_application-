@@ -16,4 +16,4 @@ async def startup_event():
     await init_models()
 
     # 3️⃣ Optional: Test DB connection
-    print("Database and tables ready!")
+    print("Database connected !")
